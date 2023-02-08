@@ -1,7 +1,7 @@
 from setuptools import setup
 from glob import glob
 
-package_name = 'danielemorra_moveit_pkg'
+package_name = 'custom_panda_moveit_pkg'
 
 setup(
     name=package_name,
