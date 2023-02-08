@@ -1,4 +1,4 @@
-# Install it
+# Install
 
 First, Follow the tutorial for installing [MoveIt](https://moveit.picknik.ai/galactic/doc/tutorials/getting_started/getting_started.html).
 Then, create your own ros2 workspace:
