@@ -27,8 +27,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'launch_dummy_server = danielemorra_moveit_pkg.follow_joint_trajectory_server:main',
-            'now_time_publisher = danielemorra_moveit_pkg.publisher_now_time:main',
+            'launch_dummy_server = custom_panda_moveit_pkg.follow_joint_trajectory_server:main',
+            'now_time_publisher = custom_panda_moveit_pkg.publisher_now_time:main',
             # '<name_exec> = <name_folder>.<name_file>:<name_function>',
         ],
     },
