@@ -42,7 +42,7 @@ def generate_launch_description():
     # planning_context
     robot_description_config = xacro.process_file(
         os.path.join(
-            get_package_share_directory("danielemorra_moveit_pkg"),
+            get_package_share_directory("custom_panda_moveit_pkg"),
             "config",
             "panda.urdf.xacro",
         )
@@ -50,7 +50,7 @@ def generate_launch_description():
     robot_description = {"robot_description": robot_description_config.toxml()}
 
     robot_description_semantic_config = load_file(
-        "danielemorra_moveit_pkg", "config/panda.srdf"
+        "custom_panda_moveit_pkg", "config/panda.srdf"
     )
     robot_description_semantic = {
         "robot_description_semantic": robot_description_semantic_config
@@ -115,7 +115,7 @@ def generate_launch_description():
     )
 
     # RViz
-    rviz_base = os.path.join(get_package_share_directory("danielemorra_moveit_pkg"), "launch", "config")
+    rviz_base = os.path.join(get_package_share_directory("custom_panda_moveit_pkg"), "launch", "config")
     rviz_full_config = os.path.join(rviz_base, "panda_moveit_config_demo.rviz")
     rviz_node = Node(
         package="rviz2",
