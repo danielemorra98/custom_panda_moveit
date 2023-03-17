@@ -12,3 +12,9 @@ Clone this repository and build the package
 git clone https://github.com/danielemorra98/custom_panda_moveit.git
 colcon build
 ```
+
+# Run
+To launch the moveIt and RViz nodes:
+```
+ros2 launch custom_panda_moveit panda.launch.py
+```
